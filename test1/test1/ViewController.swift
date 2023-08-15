@@ -19,11 +19,16 @@ class ViewController: UIViewController {
     }
     
     func showExample(){
+//        let hub = JGProgressHUD()
+//        hub.indicatorView = JGProgressHUDSuccessIndicatorView()
+//        hub.textLabel.text = "Loaing"
+//        hub.detailTextLabel.text = "Please wait"
+//        hub.show(in: view)
         let hub = JGProgressHUD()
         hub.indicatorView = JGProgressHUDSuccessIndicatorView()
-        hub.textLabel.text = "Loaing"
-        hub.detailTextLabel.text = "Please wait"
+        hub.textLabel.text = "Success"
         hub.show(in: view)
+        hub.dismiss(afterDelay: 3)
     }
 
 
